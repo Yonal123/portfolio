@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: linear-gradient(rgb(138, 134, 134) 45%, white), url("../Images/pexels-andrew-neel-2312369.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  width: 100%;
+  height: 82vh;
+}
+
+header nav,
+header nav ul {
+  height: 70px;
+}
+
+header nav {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 25px;
+}
+
+header nav div .logo,
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  font-family: "Work Sans", sans-serif;
+}
+
+nav input,
+nav label {
+  display: none;
+}
+
+header .hero {
+  height: calc(82vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+}
+
+header .hero h1 {
+  font-weight: 500;
+  font-size: 50px;
+}
+header .hero a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 15px 20px;
+  background-color: rgb(240, 38, 38);
+  border-radius: 10%;
+  transition: all 0.3s ease;
+}
+
+.hero section a:hover {
+  box-shadow: 0 0 15px rgb(240, 38, 38);
+}
